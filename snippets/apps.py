@@ -1,5 +1,5 @@
-from django.apps import AppConfig
-
-
-class SnippetsConfig(AppConfig):
-    name = 'snippets'
+# from django.apps import AppConfig
+#
+#
+# class SnippetsConfig(AppConfig):
+#     name = 'snippets'

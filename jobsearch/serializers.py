@@ -15,4 +15,4 @@ class JobsearchdetailSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Jobsearch
-        fields = ['id', 'title', 'code', 'content']
+        fields = ['id', 'created', 'title', 'code', 'content', 'test']
