@@ -1,0 +1,50 @@
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
+from travel.models import Travel
+from rest_framework import generics
+from travel.serializers import TravelSerializer, TraveldetailSerializer
+from django.views import generic
+from django.contrib.auth.models import User
+from rest_framework.views import APIView
+from rest_framework import status
+
+class TravelList(generics.ListCreateAPIView):
+    queryset = Travel.objects.all()
+    serializer_class = TravelSerializer
+
+
+class TravelDetail(generics.RetrieveAPIView):
+    queryset = Travel.objects.all()
+    serializer_class = TraveldetailSerializer
+
+class TravelTestView(APIView):
+
+    def get(self, request, format=None):
+        queryset = Travel.objects.all()
+        serializer = TravelSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+    def post(self, request, format=None):
+        serializer = TravelSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data,status=status.HTTP_201_CREATED)
+        return Response(serializer.errors,status=status.HTTP_302_FOUND)
+
+
+class TravelTestDetailVeiw(APIView):
+    def get_pk(self, pk):
+        try:
+            return Travel.objects.get(pk=pk)
+        except Exception as e:
+            print(e)
+            raise (status.HTTP_404_NOT_FOUND)
+
+    def get(self, request, pk):
+        queryset = self.get_pk(pk)
+        serializer = TravelSerializer(queryset)
+        return Response(serializer.data)
+
+
+
+

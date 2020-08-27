@@ -1,0 +1,74 @@
+<html>
+  <head>
+      <meta charset="utf-8">
+    <title>제목</title>
+    <style>
+      .container {
+      }
+
+      .cont-contain {
+        margin-top: 10px;
+        border: 1px solid black;
+        padding: 5px 5px;
+      }
+
+      .cont-data {
+        display: inline;
+      }
+
+      .normal-btn {
+        display: block;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cont-contain">
+        data0 :
+        <div class="cont-data">data</div>
+      </div>
+
+      <div class="cont-contain">
+        data1 :
+        <div class="cont-data">data</div>
+      </div>
+
+      <div class="cont-contain">
+        data2 :
+        <div class="cont-data">data</div>
+      </div>
+
+      <div class="cont-contain">
+        data3 :
+        <div class="cont-data">data</div>
+      </div>
+
+      <div class="cont-contain">
+        data4 :
+        <div class="cont-data">data</div>
+      </div>
+
+      <div class="cont-contain">
+        data5 :
+        <div class="cont-data">data</div>
+      </div>
+      <button class="normal-btn" id="counterBtn">눌러보든가 말든가;;</button>
+      <button class="normal-btn" id="resetBtn">눌러보든가 카운터 초기화</button>
+    </div>
+    <script>
+      let counterBtnObj = document.querySelector('#counterBtn');
+      let resetBtnObj = document.querySelector('#resetBtn');
+      let btnCounter = 0;
+      counterBtnObj.addEventListener('click', () => {
+        counterBtnObj.innerText = `왜 눌렀냐? ${btnCounter}번 누름`;
+        btnCounter++;
+      });
+
+      resetBtnObj.addEventListener('click', () => {
+        btnCounter = 0;
+        counterBtnObj.innerText = `아 초기화 시켰네;; 눌러보든가 말든가;; ${btnCounter}번 누름`;
+      });
+    </script>
+  </body>
+</html>

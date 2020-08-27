@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'jobsearch.apps.JobsearchConfig',
+    'travel.apps.TravelConfig',
 ]
 
 MIDDLEWARE = [
