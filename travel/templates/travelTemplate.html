@@ -26,50 +26,61 @@
     </div>
     <div class="row">
         <div class="col m-2 bg-secondary rounded">
-            <div class="mb-3">
-                <div class="row p-3 mr-4">
-                    <div class="input-group-prepend bg-light rounded mr-1">
-                        <button class="btn btn-outline-dark active" type="button">GET</button>
-                    </div>
+            <div id="jsonContainer" style="display: none;">
+            </div>
+            <div id="keyValueContainer">
+                <div id="paramRowBox" class="mb-3">
+                    <div class="row p-3 mr-4">
+                        <div class="input-group-prepend bg-light rounded mr-1">
+                            <button id="getBtn" class="btn btn-outline-dark active" type="button">GET</button>
+                        </div>
 
-                    <div class="input-group-prepend bg-light rounded">
-                        <button class="btn btn-outline-dark" type="button">POST</button>
+                        <div class="input-group-prepend bg-light rounded">
+                            <button id="postBtn" class="btn btn-outline-dark" type="button">POST</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 mt-2 p-2">URL</div>
+                        <div class="col p-2">
+                            <input id="urlText" type="text" class="form-control border border-dark" placeholder="궁금해... 너의 URL 값"/>
+                        </div>
+                    </div>
+                    <!--                <div class="row">-->
+                    <!--                    <div class="col-2 p-1">-->
+                    <!--                        <button id="rmParamBtn" class="btn btn-dark">-</button>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="col p-1">-->
+                    <!--                        <input type="text" class="form-control border border-dark" placeholder="KEY"/>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="col p-1">-->
+                    <!--                        <input type="text" class="form-control border border-dark" placeholder="VALUE"/>-->
+                    <!--                    </div>-->
+                    <!--                </div>-->
+                    <div class="row">
+                        <div class="col-2 p-1">
+                            <button id="addParamBtn" class="btn btn-dark">+</button>
+                        </div>
+                        <div class="col p-1">
+                            <input type="text" id="paramKey" class="form-control border border-dark" placeholder="KEY"/>
+                        </div>
+                        <div class="col p-1">
+                            <input type="text" id="paramValue" class="form-control border border-dark" placeholder="VALUE"/>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-2 p-1">
-                    </div>
-                    <div class="col p-1">
-                        <input type="text" class="form-control border border-dark" placeholder="KEY"/>
-                    </div>
-                    <div class="col p-1">
-                        <input type="text" class="form-control border border-dark" placeholder="VALUE"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-2 p-1">
-                        <button class="btn btn-dark">&nbsp;+&nbsp;</button>
-                    </div>
-                    <div class="col p-1">
-                        <input type="text" class="form-control border border-dark" placeholder="KEY"/>
-                    </div>
-                    <div class="col p-1">
-                        <input type="text" class="form-control border border-dark" placeholder="VALUE"/>
-                    </div>
-                </div>
-                <div class="row">
+                <div id="submitRow" class="row">
                     <div class="col p-2 text-right">
-                        <button class="btn btn-dark">Submit</button>
+                        <button id="submitBtn" class="btn btn-dark">Submit</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col m-2 bg-secondary rounded">
             <div class="py-3">
-                <textarea class="form-control" placeholder="불러봐... 너의 RESPONSE값" rows="8" readonly></textarea>
+                <textarea id="responseArea" class="form-control" placeholder="불러봐... 너의 RESPONSE값" rows="8" readonly></textarea>
             </div>
             <div class="mb-3">
-                <button class="btn btn-dark">COPY</button>
+<!--                <button class="btn btn-dark">COPY</button>-->
             </div>
         </div>
     </div>
@@ -85,7 +96,10 @@
         crossorigin="anonymous"></script>
 
 <!-- Project JS -->
-<script type="text/javascript" src="/static/js/index.js"></script>
+<script type="text/javascript" src="/static/js/textKey.js?{% now 'U' %}"></script>
+<script type="text/javascript" src="/static/js/global.js?{% now 'U' %}"></script>
+<script type="text/javascript" src="/static/js/module.js?{% now 'U' %}"></script>
+<script type="text/javascript" src="/static/js/index.js?{% now 'U' %}"></script>
 
 </body>
 </html>
