@@ -1,3 +1,6 @@
+from django.http import HttpResponse
+from django.shortcuts import render
+from django.views.generic import TemplateView
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from travel.models import Travel
@@ -7,6 +10,14 @@ from django.views import generic
 from django.contrib.auth.models import User
 from rest_framework.views import APIView
 from rest_framework import status
+
+
+class TravelTemplateView(TemplateView):
+    template_name = 'travelTemplate.html'
+
+    def get(self, request, *args, **kwargs):
+        return self.render_to_response({})
+
 
 class TravelList(generics.ListCreateAPIView):
     queryset = Travel.objects.all()
