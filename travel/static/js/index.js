@@ -11,7 +11,7 @@ const mainPage = {
     mainPage.submitActiveEvent();
     jQueryHelper.addEvent(eventAry, HtmlId.urlText, mainPage.submitActiveEvent);
   },
-  submitActiveEvent: ()=>{
+  submitActiveEvent: () => {
     const isUrlEmpty = stringHelper.isEmpty(jQueryHelper.getValue(HtmlId.urlText));
     jQueryHelper.setAttr(HtmlId.submitBtn, HtmlAttr.disabled, isUrlEmpty);
   },
@@ -60,19 +60,24 @@ const mainPage = {
     const url = jQueryHelper.getValue(HtmlId.urlText);
     const params = mainPage.getParams();
     const isGetBtnActive = jQueryHelper.getIdSelector(HtmlId.getBtn).hasClass(HtmlClass.active);
+    const setStatusCodeCallback = mainPage.setStatusCode;
 
     if (isGetBtnActive) {
-      ajaxHelper.getAPIPromise(url, params).then(
+      ajaxHelper.getAPIPromise(url, params, setStatusCodeCallback).then(
         mainPage.setResponseData,
         promiseHelper.rejectRequest
       )
     } else {
-      ajaxHelper.postAPIPromise(url, params).then(
+      ajaxHelper.postAPIPromise(url, params, setStatusCodeCallback).then(
         mainPage.setResponseData,
         promiseHelper.rejectRequest
       )
     }
   },
+  setStatusCode: (idName, code) => {
+    jQueryHelper.setText(idName, code);
+  }
+  ,
   getParams: () => {
     let params = {};
     const keys = jQueryHelper.getAllIdSelector(HtmlId.paramKey);

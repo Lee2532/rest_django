@@ -2,70 +2,154 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d45a553e-b609-46c4-b03e-7147f481a813" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rest_django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rest_django.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobsearch/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobsearch/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobsearch/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobsearch/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorial/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorial/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/travel/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel/static/js/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/travel/static/js/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travel/static/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel/static/js/module.js" beforeDir="false" afterPath="$PROJECT_DIR$/travel/static/js/module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel/templates/travelTemplate.html" beforeDir="false" afterPath="$PROJECT_DIR$/travel/templates/travelTemplate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/travel/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/travel/views.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="testdb: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="testdb: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="roles" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1fuuFGm0iPyduE1dlfoeeCLoRkZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/tourism" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/travel/static" />
+      <recent name="$PROJECT_DIR$/travel" />
+      <recent name="$PROJECT_DIR$/static/travel" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\이승오\소스코드\rest_django\tourism" />
       <recent name="D:\이승오\소스코드\rest_django\jobsearch" />
       <recent name="D:\이승오\소스코드\rest_django\snippets" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
-    <configuration name="read_csv" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="runserver" type="PythonConfigurationType" factoryName="Python">
       <module name="rest_django" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../jobsearch_crawl" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../jobsearch_crawl/read_csv.py" />
-      <option name="PARAMETERS" value="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -73,11 +157,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.read_csv" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -89,8 +168,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597080193439</updated>
+      <workItem from="1598545913387" duration="36000" />
+      <workItem from="1598545998901" duration="30402000" />
+      <workItem from="1599233489841" duration="799000" />
+      <workItem from="1599273180496" duration="5836000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -104,5 +190,46 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="399" y="221" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598723112846">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state x="399" y="221" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.981@0.23.1680.981" timestamp="1598723112845" />
+    <state x="842" y="210" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598632230577">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state x="842" y="210" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.981@0.23.1680.981" timestamp="1598632230577" />
+    <state width="1480" height="171" key="GridCell.Tab.0.bottom" timestamp="1599235144245">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state width="1480" height="171" key="GridCell.Tab.0.bottom/0.23.1680.981@0.23.1680.981" timestamp="1599235144245" />
+    <state width="1480" height="171" key="GridCell.Tab.0.center" timestamp="1599235144245">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state width="1480" height="171" key="GridCell.Tab.0.center/0.23.1680.981@0.23.1680.981" timestamp="1599235144245" />
+    <state width="1480" height="171" key="GridCell.Tab.0.left" timestamp="1599235144245">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state width="1480" height="171" key="GridCell.Tab.0.left/0.23.1680.981@0.23.1680.981" timestamp="1599235144245" />
+    <state width="1480" height="171" key="GridCell.Tab.0.right" timestamp="1599235144245">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state width="1480" height="171" key="GridCell.Tab.0.right/0.23.1680.981@0.23.1680.981" timestamp="1599235144245" />
+    <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1598723141339">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state width="239" height="457" key="HiddenNamespacesPopup/0.23.1680.981@0.23.1680.981" timestamp="1598723141339" />
+    <state x="69" y="196" key="SettingsEditor" timestamp="1598664852915">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state x="69" y="196" key="SettingsEditor/0.23.1680.981@0.23.1680.981" timestamp="1598664852915" />
+    <state x="838" y="301" width="670" height="676" key="search.everywhere.popup" timestamp="1599280208865">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state x="838" y="301" width="670" height="676" key="search.everywhere.popup/0.23.1680.981@0.23.1680.981" timestamp="1599280208865" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/rest_django$runserver.coverage" NAME="runserver Coverage Results" MODIFIED="1599274262430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

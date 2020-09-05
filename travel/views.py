@@ -10,6 +10,7 @@ from django.views import generic
 from django.contrib.auth.models import User
 from rest_framework.views import APIView
 from rest_framework import status
+from rest_framework.generics import ListCreateAPIView, RetrieveAPIView
 
 
 class TravelTemplateView(TemplateView):
@@ -19,14 +20,15 @@ class TravelTemplateView(TemplateView):
         return self.render_to_response({})
 
 
-class TravelList(generics.ListCreateAPIView):
+class TravelList(ListCreateAPIView):
     queryset = Travel.objects.all()
     serializer_class = TravelSerializer
 
 
-class TravelDetail(generics.RetrieveAPIView):
+class TravelDetail(RetrieveAPIView):
     queryset = Travel.objects.all()
     serializer_class = TraveldetailSerializer
+
 
 class TravelTestView(APIView):
 
@@ -39,11 +41,12 @@ class TravelTestView(APIView):
         serializer = TravelSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return Response(serializer.data,status=status.HTTP_201_CREATED)
-        return Response(serializer.errors,status=status.HTTP_302_FOUND)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_302_FOUND)
 
 
-class TravelTestDetailVeiw(APIView):
+class TravelTestDetailView(APIView):
+
     def get_pk(self, pk):
         try:
             return Travel.objects.get(pk=pk)
@@ -55,7 +58,3 @@ class TravelTestDetailVeiw(APIView):
         queryset = self.get_pk(pk)
         serializer = TravelSerializer(queryset)
         return Response(serializer.data)
-
-
-
-
