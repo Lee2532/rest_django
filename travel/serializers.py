@@ -11,7 +11,6 @@ class TravelSerializer(serializers.ModelSerializer):
                   'longitude', 'designated_date', 'loc']
 
 
-
 class TraveldetailSerializer(serializers.ModelSerializer):
 
     class Meta:

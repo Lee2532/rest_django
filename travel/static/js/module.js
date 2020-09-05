@@ -66,7 +66,12 @@ const jQueryHelper = {
   setValue: (idName, data) => {
     const selector = jQueryHelper.getIdSelector(idName);
     selector.val(data);
+  },
+  setText: (idName, data)=>{
+    const selector = jQueryHelper.getIdSelector(idName);
+    selector.text(data);
   }
+
 };
 
 const promiseHelper = {
@@ -79,7 +84,7 @@ const promiseHelper = {
 };
 
 const ajaxHelper = {
-  getAPIPromise: (url, param) => {
+  getAPIPromise: (url, param, callback) => {
     return new Promise((resolve, reject) => {
       $.ajax({
         url: url,
@@ -89,15 +94,18 @@ const ajaxHelper = {
       }).done(function (response) {
         resolve(response);
       }).fail(function (error) {
-        console.warn(error);
+        console.error(error);
+        const statusCode = error.status;
+        callback(HtmlId.statusCode, statusCode);
         reject(error);
-      }).always(function (response) {
+      }).always(function (response, textStatus, xhr) {
+        const statusCode = xhr.status;
+        callback(HtmlId.statusCode, statusCode);
         resolve(response);
-      })
+      });
     })
-  }
-  ,
-  postAPIPromise: (url, param) => {
+  },
+  postAPIPromise: (url, param, callback) => {
     return new Promise((resolve, reject) => {
       $.ajax({
         url: url,
@@ -108,10 +116,14 @@ const ajaxHelper = {
         resolve(response);
       }).fail(function (error) {
         console.warn(error);
+        const statusCode = error.status;
+        callback(HtmlId.statusCode, statusCode);
         reject(error);
-      }).always(function (response) {
+      }).always(function (response, textStatus, xhr) {
+        const statusCode = xhr.status;
+        callback(HtmlId.statusCode, statusCode);
         resolve(response);
-      })
+      });
     })
   }
 };

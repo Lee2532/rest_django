@@ -11,6 +11,7 @@ HtmlId.urlText = "urlText";
 HtmlId.responseArea = "responseArea";
 HtmlId.paramKey = "paramKey";
 HtmlId.paramValue = "paramValue";
+HtmlId.statusCode = "statusCode";
 
 class HtmlClass {}
 
