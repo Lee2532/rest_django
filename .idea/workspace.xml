@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/rest_django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rest_django.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/travel/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/travel/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel/static/js/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/travel/static/js/global.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travel/static/js/index.js" afterDir="false" />
@@ -12,6 +13,7 @@
       <change beforePath="$PROJECT_DIR$/travel/templates/travelTemplate.html" beforeDir="false" afterPath="$PROJECT_DIR$/travel/templates/travelTemplate.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/travel/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/travel/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
